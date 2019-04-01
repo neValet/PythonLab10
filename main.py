@@ -2,19 +2,21 @@ from tenthLab import Student
 
 petro = Student()
 
-vasya = Student(fullname="Vasya Chornozem",
+vasya = Student(name="Vasya",
+                surname="Chornozem",
                 rating=2,
                 height=180,
-                hairColour="brown")
+                hair_colour="brown")
 
-oleg = Student(fullname="Oleg Korovay",
+oleg = Student(name="Oleg",
+               surname="Korovay",
                rating=6,
                height=168,
-               hairColour="blonde",
+               hair_colour="blond",
                weight=90,
                nationality="Ukrainian")
 
 print(petro)
 print(vasya)
 print(oleg)
-print(Student.returnEyesColour())
+print(Student.get_eyes_colour())

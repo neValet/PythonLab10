@@ -1,27 +1,28 @@
 class Student:
-
-    eyesColour = "blue"
+    eyes_colour = "blue"
 
     def __init__(self,
-                 fullname="Denis Dub",
+                 name="Denis",
+                 surname="Dub",
                  rating=13,
                  height=183,
-                 hairColour="black",
+                 hair_colour="black",
                  weight=82,
                  nationality="Ukrainian"):
-        self.fullname = fullname
+        self.name = name
+        self.surname = surname
         self.rating = rating
         self.height = height
-        self.hairColour = hairColour
+        self.hair_colour = hair_colour
         self.weight = weight
         self.nationality = nationality
 
     def __del__(self):
-        print("Student ", self.fullname, " deleted")
+        print("Student ", self.name + self.surname, " deleted")
 
     def __repr__(self):
         return str(self.__dict__)
 
     @staticmethod
-    def returnEyesColour():
-        return Student.eyesColour
+    def get_eyes_colour():
+        return Student.eyes_colour
